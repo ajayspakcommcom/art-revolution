@@ -1,0 +1,41 @@
+.card {
+    padding: 10px 10px !important;
+    margin-bottom: 0 !important;
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    border-radius: 5px !important;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    line-height: 17px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.like-view {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.like-view svg {
+    width: 22px;
+    height: 22px;
+}

@@ -1,0 +1,10 @@
+.item-wrapper {
+    cursor: pointer;
+}
+
+.item-wrapper p {
+    font-size: 13px;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
