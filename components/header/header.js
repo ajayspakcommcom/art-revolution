@@ -13,7 +13,8 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="mynavbar">
                         <ul className="navbar-nav me-auto">
-                            <li className="nav-item"><Link className="nav-link" href='/artist'>Artists</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href='/artist'>Artist</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href='/artwork'>Art Work</Link></li>
                             {/* <li className="nav-item">{process.env.API_URL}</li> */}
                             {/* <li className="nav-item"><Link className="nav-link" href='/about'>About</Link></li>
                             <li className="nav-item"><Link className="nav-link" href='/contact'>Contact</Link></li> */}
