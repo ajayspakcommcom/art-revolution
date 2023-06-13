@@ -36,3 +36,65 @@ footer {
     padding: 0 15px;
     grid-gap: 15px;
 }
+
+.inline-category {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-group-horizontal>li {
+    cursor: pointer;
+}
+
+.breadcrumb>li,
+.artwork_card__3_DJm {
+    cursor: pointer;
+}
+
+.breadcrumb>li:last-child {
+    cursor: auto;
+}
+
+.image-item {
+    width: 100%;
+}
+
+.artist-wrapper {
+    padding: 0 30px;
+}
+
+.filter-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    padding: 20px 30px 30px;
+    justify-content: space-between;
+}
+
+.grid-selection {
+    width: 150px;
+}
+
+.grid-selection select {
+    padding: 0.49rem 2.25rem 0.49rem 0.75rem;
+}
+
+.list-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.list-wrapper>.left-part {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.list-wrapper>.left-part p {
+    margin: 5px 0 0 15px;
+}
+
+.right-part>svg {
+    width: 20px;
+    height: 20px;
+}

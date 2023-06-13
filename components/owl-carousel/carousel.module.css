@@ -4,8 +4,11 @@
 }
 
 .carouselItem {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
 }
 
 .leftbtn,
@@ -16,17 +19,18 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .leftbtn {
     top: 50%;
-    left: 0;
+    left: 1%;
 }
 
 .rightbtn {
     top: 50%;
-    right: 0;
+    left: calc(100% - 15px);
 }

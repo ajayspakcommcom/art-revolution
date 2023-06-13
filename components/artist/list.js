@@ -12,6 +12,7 @@ const ArtistList = (props) => {
     const artistData = getAllArtists();
     const characterData = getAllCharacters();
     const [counter, setCounter] = useState(0);
+    const [isGrid, setIsGrid] = useState('list');
 
     const [artistList, setArtistList] = useState([]);
     const [char, setChar] = useState('all');
@@ -21,6 +22,11 @@ const ArtistList = (props) => {
         setCounter((prevState) => {
             return prevState + 1;
         });
+    };
+
+    const changeGridHandler = (val) => {
+        setIsGrid(val);
+        //console.log(val);
     };
 
     useEffect(() => {
@@ -35,10 +41,13 @@ const ArtistList = (props) => {
     return (
         <>
             <Carousel />
-            <FilterList filterData={characterData} onFilter={filterHandler} />
-            <div className="row">
-                {artistList.length > 0 && artistList.map((item, indx, arr) => <ArtistItem key={item.id} data={item} />)}
+            <FilterList filterData={characterData} onFilter={filterHandler} onChangeGridHandler={changeGridHandler} />
+            <div className="row artist-wrapper">
+                {artistList.length > 0 && artistList.map((item, indx, arr) => <ArtistItem key={item.id} data={item} isGridTemplate={isGrid} />)}
                 {artistList.length == 0 && <p className='text-center'>There is no Artist Found!</p>}
+            </div>
+            <div className='text-center'>
+                <button type="button" className="btn btn-primary">Load More...</button>
             </div>
         </>
     );
