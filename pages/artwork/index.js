@@ -1,16 +1,17 @@
 import React from "react";
 import ArtWork from "@/components/artwork/artwork";
-import { getAllArtists } from '@/data/artist';
+import { getAllArts } from "@/data/artwork";
+
 
 
 const ArtWorkPage = () => {
-    let artList = getAllArtists();
+    let artWorks = getAllArts();
 
     return (
         <>
             <h1>Art Work</h1>
             <div className="row art-wrapper">
-                <ArtWork data={artList} />
+                <ArtWork data={artWorks} />
             </div>
         </>
     );
